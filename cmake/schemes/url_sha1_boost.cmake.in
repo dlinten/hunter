@@ -127,7 +127,7 @@ ExternalProject_Add(
     CONFIGURE_COMMAND
     ${env_cmd}
     COMMAND
-    ${bootstrap_cmd}
+    "${bootstrap_cmd}"
     BUILD_COMMAND
     ""
     BUILD_IN_SOURCE
