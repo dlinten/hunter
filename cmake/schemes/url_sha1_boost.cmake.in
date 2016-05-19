@@ -91,7 +91,7 @@ if("@MSVC@" OR "@MINGW@")
   set(install_cmd "b2")
   set(bootstrap_cmd "bootstrap.bat")
 else()
-  set(install_cmd "./b2" "cxxflags=-std=c++14" "link=static")
+  set(install_cmd "./b2" "toolset=clang" "cxxflags=-std=c++14 -stdlib=libc++" linkflags="-stdlib=libc++" "link=static")
   if(APPLE)
     # Clear Xcode environment
     set(
@@ -99,7 +99,7 @@ else()
         . "@HUNTER_SELF@/scripts/clear-all.sh" && ./bootstrap.sh
     )
   else()
-    set(bootstrap_cmd "./bootstrap.sh")
+    set(bootstrap_cmd "./bootstrap.sh" "--with-toolset=clang")
   endif()
 endif()
 
