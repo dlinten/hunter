@@ -21,11 +21,11 @@ hunter_add_version(
     PACKAGE_NAME
     Boost
     VERSION
-    "1.61"
+    "1.60"
     URL
-    "http://sourceforge.net/projects/boost/files/boost/1.61.0/boost_1_61_0.tar.gz/download"
+    "http://sourceforge.net/projects/boost/files/boost/1.60.0/boost_1_60_0.tar.gz/download"
     SHA1
-    2d2b80771f584f327827193fcf3abf836edcdfaa
+    ac74db1324e6507a309c5b139aea41af624c8110
 )
 
 # Version without tests and docs
